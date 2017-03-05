@@ -4,3 +4,9 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+I'm **Rafael Camacho** this is a small intro.
+
+Have a look at my [research](/research/)
+
+Have a look at my [blog](/blog/)
