@@ -16,12 +16,15 @@
 title: Rafael Camacho
 email: camachodejay@yahoo.com
 description: > # this means to ignore newlines until "baseurl:" Write a description here It will be used to google results.
-  Rafael Camacho's research and consutling - powered by Jekyll and Markdwon
+  Rafael Camacho's research and consutling
+
+myfancyurl: http://www.google.com/
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  CamachoDejay
+linkedin_username: Rafael Camacho Dejay
 author: Rafael Camacho Dejay
 google_analytics: UA-92889605-1
 
