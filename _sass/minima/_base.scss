@@ -68,6 +68,9 @@ figcaption {
 ul, ol {
   margin-left: $spacing-unit;
 }
+ul#menu li {
+    display:inline;
+}
 
 li {
   > ul,
