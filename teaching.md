@@ -20,3 +20,7 @@ Link to the presentation from the first session: [Session-01-presentation](/pdfs
 
 Link to the repository containing the code used during the second session:
 [Session-02-source-code](https://github.com/CamachoDejay/ProgrammingSessions/tree/master/Session-02)
+
+Link to the presentation from the first session: [Session-02-presentation](/pdfs/Session-02.pdf)
+
+### [](#p1)Project 01
