@@ -31,7 +31,7 @@ analytics-google: 'UA-92889605-1'
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: mydisqus # enter this from your disqus account
-  categories: [blog, research] # only show disqus for posts that have these categories
+  categories: [] # [blog, research] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
@@ -54,8 +54,8 @@ github: CamachoDejay
 email: camachodejay@yahoo.com
 
 authors:
-    johndoe:
-        name: John Doe
+    rafa:
+        name: Rafael Camacho Dejay
         bio: Researcher and programmer
         external-image: false
         picture: assets/images/profile.jpg
