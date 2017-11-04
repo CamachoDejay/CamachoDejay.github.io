@@ -1,11 +1,10 @@
 ---
 title: "Hello world"
 layout: post
-date: 2017-10-30 22:00
+date: 2017-09-28 22:00
 image: false
 headerImage: false
 tag:
-- intro
 - test
 star: false
 category: blog

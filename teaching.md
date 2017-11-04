@@ -30,3 +30,5 @@ Link to the presentation from the first session: [Session-02-presentation](/pdfs
 Now that we can handle basic input and output, it is time we start to do some interesting calculations and plotting. So, for our first project in the course (Project-01) we will work towards a graphical user interphase [(GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface) that displays the [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set) (a very famous [fractal](https://en.wikipedia.org/wiki/Fractal)) and allows the user to zoom into any area of the fractal with seemingly infinite resolution.
 
 [**For detailed project information click here**](/projects/p-01)
+
+[**For the new project site click here**](/Project01-Step01)
