@@ -3,13 +3,16 @@ layout: page
 title: Teaching
 permalink: /teaching/
 ---
+## Ongoing courses
 
+Below you will find information and links related to ongoing courses.
 
 * * *
 ## [](#header-1)Programming Sessions
 * * *
-Here I will place the info about the programming sessions.
-The site is under construction but there is information already below (source code and presentations in PDF format).
+
+The **Programming Sessions** are designed to teach computer programming and the MATLAB language to young researchers. The sessions focus on software construction, meaning mostly on coding and debugging but also keeping track of design techniques, construction planning, unit testing, and other activities. We will teach many different heuristic approaches to problem solving and introduce as fast as possible wicked problems by using projects that evolve as we solve them.
+
 ### [](#header-2)Session 01
 
 Link to the repository containing the code used during the first session: [Session-01-source-code](https://github.com/CamachoDejay/ProgrammingSessions/tree/master/Session-01)
