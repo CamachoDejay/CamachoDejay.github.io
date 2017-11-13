@@ -228,7 +228,11 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer
+  jekyll-feed
+  jekyll-gist
+  jekyll-seo-tag
   jekyll-sitemap
+  jemoji
 
 BUNDLED WITH
    1.15.4
