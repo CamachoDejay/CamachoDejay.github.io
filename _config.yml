@@ -3,7 +3,7 @@ name: Rafael Camacho Dejay
 bio: Researcher and programmer.
 
 # twitter summary info
-description: Personal website for science, software and climbing.
+description: Rafael Camacho Dejay's personal website for science, software and climbing.
 
 # if it's an external image, update below for true
 # better with square images
@@ -34,10 +34,10 @@ disqus:
   categories: [] # [blog, research] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-# facebook: myfacebook
-# twitter: mytwitter
+# facebook: rafael.camacho.581730
+# twitter: camachodejay
 # google: mygoogle
-# instagram: myinstagram
+instagram: camachodejay
 # pinterest: mypinterest
 linkedin: camacho-dejay
 researchgate: Rafael_Camacho2
@@ -59,7 +59,7 @@ authors:
         bio: Researcher and programmer
         external-image: false
         picture: assets/images/profile.jpg
-        # twitter: johndoe
+        twitter: camachodejay
     # jamesfoster:
     #     name: James Foster
     #     bio: A Man who develops software with coffee
@@ -108,6 +108,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-sitemap
 
 jekyll-mentions:
     base_url: https://github.com
