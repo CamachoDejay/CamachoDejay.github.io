@@ -13,17 +13,21 @@ Below you will find information and links related to ongoing courses.
 
 The **Programming Sessions** are designed to teach computer programming and the MATLAB language to young researchers. The sessions focus on software construction, meaning mostly on coding and debugging but also keeping track of design techniques, construction planning, unit testing, and other activities. We will teach many different heuristic approaches to problem solving and introduce as fast as possible wicked problems by using projects that evolve as we solve them.
 
-### [](#header-2)Session 01
+### [](#S-1)Session 01
 
 [**Follow this link for detailed information about the session**](/session-01)
 
 
-### [](#header-3)Session 02
+### [](#S-2)Session 02
 
 Link to the repository containing the code used during the second session:
 [Session-02-source-code](https://github.com/CamachoDejay/ProgrammingSessions/tree/master/Session-02)
 
 Link to the presentation from the first session: [Session-02-presentation](/pdfs/Session-02.pdf)
+
+### [](#S-3)Session 03
+
+[**Follow this link for detailed information about the session**](/session-03)
 
 ### [](#p1)Project 01
 
