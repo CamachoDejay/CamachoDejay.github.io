@@ -16,11 +16,11 @@ externalLink: true
 ---
 # Localization via Gradient Fit
 
-Below I solve the math presented by Liu et. al. in their article: __Fast and Precise 3D Fluorophore Localization based on Gradient Fitting__ 2015 Scientific reports. The reason fir this is that their [implementation](http://www.pitt.edu/~liuy/) was difficult to follow/understand. Further, by doing some cleaning of their code I noticed that extra work on the math could simplify their equations. Unfortunately, I could not find the solutions to the systems of equation in the article or supporting information. Therefore, I solved the math, which I present below, and came up with my own implementation. Direct comparison shows that my solutions are consistent with those presented by the authors in their implementation. Full reference:
+Below I solve the system of equations presented by Liu et. al. in their article: __Fast and Precise 3D Fluorophore Localization based on Gradient Fitting__ 2015 Scientific reports. The reason for this is that their [implementation](http://www.pitt.edu/~liuy/) was difficult to follow/understand. Further, by doing some cleaning of their code I noticed that extra work on the math could simplify their equations. Unfortunately, I could not find the solutions to the systems of equation in the article or supporting information. Therefore, I solved the math, which I present below, and came up with my own implementation. Direct comparison shows that my solutions are consistent with those presented by the authors in their code. Full reference:
 [Ma, H., Xu, J., Jin, J., Gao, Y., Lan, L., & Liu, Y. Scientific Reports, 5(1), 14335.](https://doi.org/10.1038/srep14335)
 
 ## System of equations
-**TODO: I have put so far only the main equations more details will follow**
+**TODO: So far, I place only the main equations/solutions. More details will follow**.
 The main system of equations presented in the paper is as follows:
 
 $$
