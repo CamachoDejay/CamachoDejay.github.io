@@ -27,6 +27,13 @@ During the first session we created a basic program that wrote some information 
 After the first two sessions we start to have a feeling as to how we can get a program to take some user **input**, do some calculations based on that input to generate **output** and finally communicate that output back to the user. On the third session we will concentrate a bit more into the basics of **computation**. We will learn how to generate more complicated *expressions*, how to make our program to choose among different alternatives (**selection**), and how to repeat a **computation** many times (**iteration**). Finally we will learn how to keep code clean, reusable and maintainable by separating a particular sub-computation into a **function**.
 [Follow this link for detailed information about the session](/session-03)
 
+### [](#S-4)Session 04
+Working on it
+
+### [](#S-5)Session 05
+During this session, we will concentrate on data fitting using one of the minimization algorithms of MATLAB. The function we will work with is called fminsearch, and allows you to find the minimum of an unconstrained multivariable function. We will present an example of its use to fit a sine wave. We will then see some of the problems related to minimization algorithms, in particular the presence of deep local minima where the algorithm gets stuck and cannot get out, thus, never reaching the global minima. After looking at the example we will work together so you fit a Gaussian to a dummy data set.
+[Follow this link for detailed information about the session](/session-05)
+
 ### [](#p1)Project 01
 
 #### Project description
