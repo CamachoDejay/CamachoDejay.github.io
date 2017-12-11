@@ -3,10 +3,10 @@ layout: page
 title: Teaching
 permalink: /teaching/
 ---
+
 ## Ongoing courses
 
 Below you will find information and links related to ongoing courses.
-
 * * *
 ## [](#header-1)Programming Sessions
 * * *
@@ -40,3 +40,11 @@ During this session, we will concentrate on data fitting using one of the minimi
 
 Now that we can handle basic input and output, it is time we start to do some interesting calculations and plotting. So, for our first project in the course (Project-01) we will work towards a graphical user interphase [(GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface) that displays the [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set) (a very famous [fractal](https://en.wikipedia.org/wiki/Fractal)) and allows the user to zoom into any area of the fractal with seemingly infinite resolution.
 [Follow this link for detailed project information](/Project01-Step01)
+
+## Super resolution imaging
+**Video of SOFI like blinking**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hykdsLkdiE8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+**Image after SOFI analysis**
+![image1](/assets/images/SOFI/SOFI4web.svg "SOFI image")
