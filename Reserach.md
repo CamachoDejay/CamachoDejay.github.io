@@ -10,6 +10,7 @@ I'm a researcher working at the interception between chemistry, biology and phys
 Currently I work in the unit of [Molecular Imaging and Photonics](https://www.chem.kuleuven.be/mip/index.htm) of [KU Leuven](https://www.kuleuven.be/english/) ([Chemistry department](https://chem.kuleuven.be/en)). Below you will find a list of ongoing projects. For a full publication list please follow this [link](https://scholar.google.be/citations?user=QRcaA74AAAAJ&hl=en).
 
 ## Bacterial survival and killing
+[Link to the project's site.](/ProjectBacteria2018/)
 Fluorescence microscopy allows researchers to observe dynamic processes in live-cells. Unfortunately, the size of bacterial cells (~2μm) is close to the resolving power of an optical microscope, known as the diffraction-limit. Therefore, while the general shape of bacteria can be seen, their sub-cellular details cannot be resolved. Particularly, observing the effects of antibiotic treatment on live bacteria is strongly obscured by the diffraction-limit.
 
 Bacteria often live in hostile environments and have sophisticated cell envelopes that protect them and ensure their structural integrity. Many antibiotics kill bacteria (cell lysis) by targeting their cell envelope. Such is the case with beta-lactam antibiotics (penicillin derivatives) which have been the most widely used antibiotics for over 50 years.
