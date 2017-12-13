@@ -36,6 +36,10 @@ During this session, we will concentrate on how to make MATLAB code easier to re
 During this session, we will concentrate on data fitting using one of the minimization algorithms of MATLAB. The function we will work with is called fminsearch, and allows you to find the minimum of an unconstrained multivariable function. We will present an example of its use to fit a sine wave. We will then see some of the problems related to minimization algorithms, in particular the presence of deep local minima where the algorithm gets stuck and cannot get out, thus, never reaching the global minima. After looking at the example we will work together so you fit a Gaussian to a dummy data set.
 [Follow this link for detailed information about the session](/session-05)
 
+### [](#S-6)Session 06
+During this session, we will concentrate on solving a system of linear equations using the ```mldivide()``` function . We will use it to do some very basic spectral unmixing. Basically, we will decompose a mixed fluorescence spectra (containing 2 known species) into its constituent spectra, and find the relative ratio between the species.
+[Follow this link for detailed information about the session](/session-06)
+
 ### [](#p1)Project 01
 
 #### Project description
