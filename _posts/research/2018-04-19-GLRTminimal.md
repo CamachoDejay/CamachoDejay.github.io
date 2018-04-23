@@ -2,8 +2,8 @@
 title: "Generalized Likelihood Ratio Test (GLRT) for the localization of single emitters in a fluorescence microscopy image"
 layout: post
 date: 2018-04-19 10:00
-image: false
-headerImage: false
+image: /assets/images/GLRT-fig1.svg
+headerImage: true
 hidden: false
 tag:
 - Localization Microscopy
