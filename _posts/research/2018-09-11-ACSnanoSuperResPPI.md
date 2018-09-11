@@ -9,7 +9,6 @@ tag:
 - Localization Microscopy
 - Super-resolution
 - Particle Localization
-- Generalized Likelihood Ratio Test
 - Image simulation
 star: false
 category: blog
