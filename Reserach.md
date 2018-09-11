@@ -9,6 +9,12 @@ I'm a researcher working at the interception between chemistry, biology and phys
 
 Currently I work in the unit of [Molecular Imaging and Photonics](https://www.chem.kuleuven.be/mip/index.htm) of [KU Leuven](https://www.kuleuven.be/english/) ([Chemistry department](https://chem.kuleuven.be/en)). Below you will find a list of ongoing projects. For a full publication list please follow this [link](https://scholar.google.be/citations?user=QRcaA74AAAAJ&hl=en).
 
+## Recent publications (2018):
+
+[Mapping Transient Protein Interactions at the Nanoscale in Living Mammalian Cells, H. De Keersmaecker, R. Camacho, D. M. Rantasa, E. Fron, H. Uji-i, H. Mizuno, S. Rocha, ACS Nano 2018, acsnano.8b01227.](https://pubs.acs.org/doi/10.1021/acsnano.8b01227)
+
+[An introduction to optical super-resolution microscopy for the adventurous biologist, J. Vangindertael, R. Camacho, W. Sempels, H. Mizuno, P. Dedecker, K. P. F. Janssen, Methods Appl. Fluoresc. 2018, 6, 022003.](http://iopscience.iop.org/article/10.1088/2050-6120/aaae0c/meta)
+
 ## Bacterial survival and killing
 [Link to the project's site.](/ProjectBacteria2018/)
 Fluorescence microscopy allows researchers to observe dynamic processes in live-cells. Unfortunately, the size of bacterial cells (~2μm) is close to the resolving power of an optical microscope, known as the diffraction-limit. Therefore, while the general shape of bacteria can be seen, their sub-cellular details cannot be resolved. Particularly, observing the effects of antibiotic treatment on live bacteria is strongly obscured by the diffraction-limit.
