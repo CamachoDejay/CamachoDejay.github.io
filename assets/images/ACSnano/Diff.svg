@@ -16,7 +16,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Diff.svg">
+   sodipodi:docname="Diff.svg"
+   inkscape:export-filename="/Users/rafa/Desktop/CamachoDejay.github.io/assets/images/ACSnano/Diff.png"
+   inkscape:export-xdpi="149.987"
+   inkscape:export-ydpi="149.987">
   <defs
      id="defs4">
     <defs
@@ -1210,13 +1213,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="459.07545"
+     inkscape:cx="284.31906"
      inkscape:cy="234.28571"
      inkscape:document-units="px"
      inkscape:current-layer="g4319"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="979"
+     inkscape:window-width="1366"
+     inkscape:window-height="667"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1" />
@@ -1228,7 +1231,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
