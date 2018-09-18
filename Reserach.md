@@ -11,9 +11,11 @@ Currently I work in the unit of [Molecular Imaging and Photonics](https://www.ch
 
 ## Recent publications (2018):
 
-[Mapping Transient Protein Interactions at the Nanoscale in Living Mammalian Cells, H. De Keersmaecker, R. Camacho, D. M. Rantasa, E. Fron, H. Uji-i, H. Mizuno, S. Rocha, ACS Nano 2018, acsnano.8b01227.](https://pubs.acs.org/doi/10.1021/acsnano.8b01227)
+[Mapping Transient Protein Interactions at the Nanoscale in Living Mammalian Cells, H. De Keersmaecker, R. Camacho, D. M. Rantasa, E. Fron, H. Uji-i, H. Mizuno, S. Rocha, ACS Nano 2018, acsnano.8b01227.](/ACSnanoSuperResPPI/)
+![imageTOC](/assets/images/ACSnano/ACSnanoSusana.jpeg "TOC")
 
 [An introduction to optical super-resolution microscopy for the adventurous biologist, J. Vangindertael, R. Camacho, W. Sempels, H. Mizuno, P. Dedecker, K. P. F. Janssen, Methods Appl. Fluoresc. 2018, 6, 022003.](http://iopscience.iop.org/article/10.1088/2050-6120/aaae0c/meta)
+![MAFimage](http://iopscience.iop.org/2050-6120/6/2/022003/downloadHRFigure/figure/mafaaae0cf50)
 
 ## Bacterial survival and killing
 [Link to the project's site.](/ProjectBacteria2018/)
