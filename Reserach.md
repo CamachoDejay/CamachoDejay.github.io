@@ -10,6 +10,8 @@ I'm a researcher working at the interception between chemistry, biology and phys
 Currently I work in the unit of [Molecular Imaging and Photonics](https://www.chem.kuleuven.be/mip/index.htm) of [KU Leuven](https://www.kuleuven.be/english/) ([Chemistry department](https://chem.kuleuven.be/en)). Below you will find a list of ongoing projects. For a full publication list please follow this [link](https://scholar.google.be/citations?user=QRcaA74AAAAJ&hl=en).
 
 ## Recent publications (2018):
+[2D polarization imaging as a low-cost fluorescence method to detect α-synuclein aggregation ex vivo in models of Parkinson’s disease, R. Camacho, D. Täuber, C. Hansen, J. Shi, L. Bousset, R. Melki, J.-Y. Li, I. G. Scheblykin, Commun. Biol. 2018, 1, 157.](/CommsBio2DPOLIM/)
+![CommsBioTOC](/assets/images/CommsBio/FluoVsFret.png "TOC")
 
 [Mapping Transient Protein Interactions at the Nanoscale in Living Mammalian Cells, H. De Keersmaecker, R. Camacho, D. M. Rantasa, E. Fron, H. Uji-i, H. Mizuno, S. Rocha, ACS Nano 2018, acsnano.8b01227.](/ACSnanoSuperResPPI/)
 ![imageTOC](/assets/images/ACSnano/ACSnanoSusana.jpeg "TOC")
