@@ -29,4 +29,4 @@ Image from the accessory olfactory bulb of an α-syn-GFP mouse model of Parkinso
 Definition of FRET parameter ε (top panel) and calculations of the fluorescence anisotropy r and ε as functions of the distance between GFP molecules in a cubic lattice (bottom panel). Black arrows show the transition from the pure monomer to the pure dimer case. Error bars represent the standard deviation of the simulations when repeated 10 times.
 
 ## Minimal working example of the single funnel approximation analysis for 2D POLIM data
-[Here you can find a MWE written in MATLAB](https://github.com/CamachoDejay/POLIM_minimal) that takes a single polarization portrait and calculates all the POLIM paramenters.
+[Here you can find a Minimal Working Example written in MATLAB](https://github.com/CamachoDejay/POLIM_minimal) that takes a single polarization portrait and calculates all the POLIM parameters.
