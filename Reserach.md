@@ -5,12 +5,12 @@ permalink: /research/
 ---
 # **{{page.title}}**
 
-I'm a researcher working at the interception between chemistry, biology and physics. For the last 8+ years I have been involved in the development and implementation of advanced imaging and spectroscopy methods, using them to, for example, characterise materials with potential use in novel electronics, and to study biological relevant systems.
+I'm a researcher working at the interception between chemistry, biology and physics. For 10 years I have been involved in the development and implementation of advanced imaging and spectroscopy methods, using them to, for example, characterise materials with potential use in novel electronics, and to study biological relevant systems.
 
-Currently I work in the unit of [Molecular Imaging and Photonics](https://www.chem.kuleuven.be/mip/index.htm) of [KU Leuven](https://www.kuleuven.be/english/) ([Chemistry department](https://chem.kuleuven.be/en)). Below you will find a list of ongoing projects. For a full publication list please follow this [link](https://scholar.google.be/citations?user=QRcaA74AAAAJ&hl=en).
+Since December 1st 2018 I joined the [Centre for Cellular Imaging](https://cf.gu.se/english/centre-for-cellular-imaging) of the [University of Gothenburg](https://www.gu.se/english). Previously I worked in the unit of [Molecular Imaging and Photonics](https://www.chem.kuleuven.be/mip/index.htm) of [KU Leuven](https://www.kuleuven.be/english/) ([Chemistry department](https://chem.kuleuven.be/en)). Below you will find a list of ongoing projects. For a full publication list please follow this [link](https://scholar.google.be/citations?user=QRcaA74AAAAJ&hl=en).
 
-**NEWS!** From the 1st of December I will be joining the [Centre for Cellular Imaging](https://cf.gu.se/english/centre-for-cellular-imaging) of the [University of Gothenburg](https://www.gu.se/english).
-<!-- Having done my Ph.D. at [Lund University](https://www.lunduniversity.lu.se/), this feels like coming back home after an exciting adventure. Looking forward to joining the CCI team! -->
+**NEWS!** Intereting events on the horizon: **Come and join us at [SCANDEM2019](https://scandem2019.se/)**
+![SCANDEMimage](https://media.scandem2019.se/2018/09/SCANDEM2019-1.jpg)
 
 ## Recent publications (2018):
 [2D polarization imaging as a low-cost fluorescence method to detect α-synuclein aggregation ex vivo in models of Parkinson’s disease, R. Camacho, D. Täuber, C. Hansen, J. Shi, L. Bousset, R. Melki, J.-Y. Li, I. G. Scheblykin, Commun. Biol. 2018, 1, 157.](/CommsBio2DPOLIM/)
