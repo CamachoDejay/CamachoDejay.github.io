@@ -10,9 +10,12 @@ I'm a researcher working at the interception between chemistry, biology and phys
 Since December 1st 2018 I joined the [Centre for Cellular Imaging](https://cf.gu.se/english/centre-for-cellular-imaging) of the [University of Gothenburg](https://www.gu.se/english). Previously I worked in the unit of [Molecular Imaging and Photonics](https://www.chem.kuleuven.be/mip/index.htm) of [KU Leuven](https://www.kuleuven.be/english/) ([Chemistry department](https://chem.kuleuven.be/en)). Below you will find a list of ongoing projects. For a full publication list please follow this [link](https://scholar.google.be/citations?user=QRcaA74AAAAJ&hl=en).
 
 **NEWS!** Intereting events on the horizon: **Come and join us at [SCANDEM2019](https://scandem2019.se/)**
-![SCANDEMimage](https://media.scandem2019.se/2018/09/SCANDEM2019-1.jpg)
+![SCANDEMimage](/assets/images/SCANDEM2019_small.png)
 
-## Recent publications (2018):
+## Recent publications:
+[Fluorescence Anisotropy Reloaded—Emerging Polarization Microscopy Methods for Assessing Chromophores' Organization and Excitation Energy Transfer in Single Molecules, Particles, Films, and Beyond. R. Camacho,  D. Täuber, I. G. Scheblykin](https://onlinelibrary.wiley.com/doi/full/10.1002/adma.201805671)
+![POLIMreview](https://wol-prod-cdn.literatumonline.com/pb-assets/journal-banners/15214095-1501384725880.jpg)
+
 [2D polarization imaging as a low-cost fluorescence method to detect α-synuclein aggregation ex vivo in models of Parkinson’s disease, R. Camacho, D. Täuber, C. Hansen, J. Shi, L. Bousset, R. Melki, J.-Y. Li, I. G. Scheblykin, Commun. Biol. 2018, 1, 157.](/CommsBio2DPOLIM/)
 ![CommsBioTOC](/assets/images/CommsBio/FluoVsFret.png "TOC")
 
