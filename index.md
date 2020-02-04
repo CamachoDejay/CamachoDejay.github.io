@@ -2,15 +2,12 @@
 layout: page
 title: Home
 ---
-PhD in the area of chemical physics ([cv](/pdfs/cv.pdf)).
+PhD in the area of chemical physics, light microscopy expert and Bio-Image Analyst  ([cv](/pdfs/cv.pdf)).
 
 Passionated about science, software and developing the right tool for the problem at hand.
 
 As a researcher I'm interested in imaging and spectroscopy methods. Have a look at my [research](/research/).
 
-## NEWS!!!
+Currently, I work as scientific officer at the [Centre for Cellular Imaging of Gothenburg University](https://cf.gu.se/english/centre_for_cellular_imaging)
 
-### SCANDEM 2019 Gothenburg  June 11-14
-![SCANDEMimage](/assets/images/SCANDEM2019_small.png)
-
-**Come and join us at [SCANDEM2019](https://scandem2019.se/)**
+![CCIheader](https://cf.gu.se/digitalAssets/1278/1278128_CCI-main-blue.jpg)

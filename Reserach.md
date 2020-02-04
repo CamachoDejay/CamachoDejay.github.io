@@ -7,23 +7,25 @@ permalink: /research/
 
 I'm a researcher working at the interception between chemistry, biology and physics. For 10 years I have been involved in the development and implementation of advanced imaging and spectroscopy methods, using them to, for example, characterise materials with potential use in novel electronics, and to study biological relevant systems.
 
-Since December 1st 2018 I joined the [Centre for Cellular Imaging](https://cf.gu.se/english/centre-for-cellular-imaging) of the [University of Gothenburg](https://www.gu.se/english). Previously I worked in the unit of [Molecular Imaging and Photonics](https://www.chem.kuleuven.be/mip/index.htm) of [KU Leuven](https://www.kuleuven.be/english/) ([Chemistry department](https://chem.kuleuven.be/en)). Below you will find a list of ongoing projects. For a full publication list please follow this [link](https://scholar.google.be/citations?user=QRcaA74AAAAJ&hl=en).
+Since December 2018 I joined the [Centre for Cellular Imaging](https://cf.gu.se/english/centre-for-cellular-imaging) of the [University of Gothenburg](https://www.gu.se/english). Previously I worked in the unit of [Molecular Imaging and Photonics](https://www.chem.kuleuven.be/mip/index.htm) of [KU Leuven](https://www.kuleuven.be/english/) ([Chemistry department](https://chem.kuleuven.be/en)). Below you will find a list of ongoing projects. For a full publication list please follow this [link](https://scholar.google.be/citations?user=QRcaA74AAAAJ&hl=en).
 
-**NEWS!** Intereting events on the horizon: **Come and join us at [SCANDEM2019](https://scandem2019.se/)**
-![SCANDEMimage](/assets/images/SCANDEM2019_small.png)
 
 ## Recent publications:
-[Fluorescence Anisotropy Reloaded—Emerging Polarization Microscopy Methods for Assessing Chromophores' Organization and Excitation Energy Transfer in Single Molecules, Particles, Films, and Beyond. R. Camacho,  D. Täuber, I. G. Scheblykin](https://onlinelibrary.wiley.com/doi/full/10.1002/adma.201805671)
-![POLIMreview](https://wol-prod-cdn.literatumonline.com/pb-assets/journal-banners/15214095-1501384725880.jpg)
+[Identifying microbial species by single-molecule DNA optical mapping and resampling statistics](https://academic.oup.com/nargab/article/2/1/lqz007/5581719), Arno Bouwens, Jochem Deen, Raffaele Vitale, Laurens D’Huys, Vince Goyvaerts, Adrien Descloux, Doortje Borrenberghs, Kristin Grussmayer, Tomas Lukes, Rafael Camacho, Jia Su, Cyril Ruckebusch, Theo Lasser, Dimitri Van De Ville, Johan Hofkens, Aleksandra Radenovic, Kris Pieter Frans Janssen, NAR Genomics and Bioinformatics, March 2020.
 
-[2D polarization imaging as a low-cost fluorescence method to detect α-synuclein aggregation ex vivo in models of Parkinson’s disease, R. Camacho, D. Täuber, C. Hansen, J. Shi, L. Bousset, R. Melki, J.-Y. Li, I. G. Scheblykin, Commun. Biol. 2018, 1, 157.](/CommsBio2DPOLIM/)
-![CommsBioTOC](/assets/images/CommsBio/FluoVsFret.png "TOC")
+[High-throughput time-resolved morphology screening in bacteria reveals phenotypic responses to antibiotics](https://www.nature.com/articles/s42003-019-0480-9), Taiyeb Zahir, Rafael Camacho, Raffaele Vitale, Cyril Ruckebusch, Johan Hofkens, Maarten Fauvart & Jan Michiels, Communications Biology, 2019
 
-[Mapping Transient Protein Interactions at the Nanoscale in Living Mammalian Cells, H. De Keersmaecker, R. Camacho, D. M. Rantasa, E. Fron, H. Uji-i, H. Mizuno, S. Rocha, ACS Nano 2018, acsnano.8b01227.](/ACSnanoSuperResPPI/)
-![imageTOC](/assets/images/ACSnano/ACSnanoSusana.jpeg "TOC")
+[Fluorescence Anisotropy Reloaded—Emerging Polarization Microscopy Methods for Assessing Chromophores' Organization and Excitation Energy Transfer in Single Molecules, Particles, Films, and Beyond](https://onlinelibrary.wiley.com/doi/full/10.1002/adma.201805671) R. Camacho,  D. Täuber, I. G. Scheblykin, Advanced Materials, February 2019
 
-[An introduction to optical super-resolution microscopy for the adventurous biologist, J. Vangindertael, R. Camacho, W. Sempels, H. Mizuno, P. Dedecker, K. P. F. Janssen, Methods Appl. Fluoresc. 2018, 6, 022003.](http://iopscience.iop.org/article/10.1088/2050-6120/aaae0c/meta)
-![MAFimage](http://iopscience.iop.org/2050-6120/6/2/022003/downloadHRFigure/figure/mafaaae0cf50)
+[Microscopic insight into non-radiative decay in perovskite semiconductors from temperature-dependent luminescence blinking](https://www.nature.com/articles/s41467-019-09640-w) Marina Gerhard, Boris Louis, Rafael Camacho, Aboma Merdasa, Jun Li, Alexander Kiligaridis, Alexander Dobrovolsky, Johan Hofkens & Ivan G. Scheblykin, Nature Communications 2019 
+
+
+[2D polarization imaging as a low-cost fluorescence method to detect α-synuclein aggregation ex vivo in models of Parkinson’s disease](/CommsBio2DPOLIM/) R. Camacho, D. Täuber, C. Hansen, J. Shi, L. Bousset, R. Melki, J.-Y. Li, I. G. Scheblykin, Commun. Biol. 2018, 1, 157.
+
+[Mapping Transient Protein Interactions at the Nanoscale in Living Mammalian Cells](/ACSnanoSuperResPPI/) H. De Keersmaecker, R. Camacho, D. M. Rantasa, E. Fron, H. Uji-i, H. Mizuno, S. Rocha, ACS Nano 2018, acsnano.8b01227.
+
+[An introduction to optical super-resolution microscopy for the adventurous biologist](http://iopscience.iop.org/article/10.1088/2050-6120/aaae0c/meta) J. Vangindertael, R. Camacho, W. Sempels, H. Mizuno, P. Dedecker, K. P. F. Janssen, Methods Appl. Fluoresc. 2018, 6, 022003.
+
 
 ## Bacterial survival and killing
 [Link to the project's site.](/ProjectBacteria2018/)

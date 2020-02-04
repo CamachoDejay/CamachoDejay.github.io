@@ -8,15 +8,23 @@ permalink: /teaching/
 
 Below you will find information and links related to ongoing courses.
 * * *
-## [](#header-1)Cellular Imaging - Course within the PhD education of The University of Gothenburg
+## [](#header-1)Introductory course to Image Analysis in Life Science - University of Gothenburg
+This PhD course is designed as an introduction to the analysis of image-based data for applications in biology. We cover:
+1. Introduction to digital images and ImageJ/FIJI.
+2. Filters/spatial operations and its use in image processing.
+3. ImageJ/FIJI macro recorder and macro writing.
+4. Examples of advance image processing pipelines. Last year (2019) [TrackMate](https://imagej.net/TrackMate) and [MaMuT](https://imagej.net/MaMuT)
+
+* * *
+## [](#header-2)Cellular Imaging - University of Gothenburg
 The **Cellular Imaging** PhD course is designed as advanced introduction to Fluorescence and Electron microscopy for biology.
 [Follow this link for detailed information about the course](/cellularimaging)
 * * *
-## [](#header-2)Programming Sessions
+## [](#header-3)Programming Sessions
 The **Programming Sessions** are designed to teach computer programming and the MATLAB language to young researchers. The sessions focus on software construction, meaning mostly on coding and debugging but also keeping track of design techniques, construction planning, unit testing, and other activities. We will teach many different heuristic approaches to problem solving and introduce as fast as possible wicked problems by using projects that evolve as we solve them.
 [Follow this link for detailed information about the course](/programmingsessions)
 * * *
-## [](#header-3)Super resolution imaging
+## [](#header-4)Super resolution imaging
 My colleagues at KU Leuven and I have recently published a Review entitled [An introduction to optical super-resolution microscopy for the adventurous biologist](http://iopscience.iop.org/article/10.1088/2050-6120/aaae0c/meta). I highly recommend this text to anyone interested in an introduction to optical microscopy, starting from the fundamental concepts governing compound and fluorescent confocal microscopy to the current state-of-the-art of super-resolution microscopy techniques and their applications.
 
 ![MAFimage](http://iopscience.iop.org/2050-6120/6/2/022003/downloadHRFigure/figure/mafaaae0cf50)
