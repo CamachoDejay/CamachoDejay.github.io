@@ -5,8 +5,9 @@ format: jb-book
 root: index
 chapters:
 - file: cv
+- file: courses
 - file: publications
-- file: teaching
+
 #- file: notebooks
 #- file: markdown-notebooks
 #- file: myMDfile
