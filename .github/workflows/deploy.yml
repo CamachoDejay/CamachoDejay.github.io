@@ -76,12 +76,22 @@ jobs:
       - name: Synchronize the locked environment
         run: uv sync --locked
 
-      # Build exactly as validation does. BASE_URL makes generated links correct
-      # if the Pages location ever changes from the root URL.
+      # This repository is a user site served at the domain root. Do not set
+      # BASE_URL to "/": MyST adds its own separator, and that value produces
+      # broken protocol-relative asset paths such as //build/app.js.
       - name: Build the production website
-        env:
-          BASE_URL: ${{ steps.pages.outputs.base_path || '/' }}
         run: uv run --locked jupyter book build --html --strict
+
+      # A successful renderer exit is not enough if its asset URLs are invalid.
+      # Reject the exact regression observed during the first deployment.
+      - name: Check generated asset paths
+        shell: bash
+        run: |
+          test -f _build/html/index.html
+          if grep -RIlE '(src|href)="//build/' _build/html; then
+            echo "::error::Generated HTML contains broken //build/ asset URLs."
+            exit 1
+          fi
 
       # This special Pages artifact is temporary deployment input. It is not
       # committed to gh-pages and contains only the generated static website.

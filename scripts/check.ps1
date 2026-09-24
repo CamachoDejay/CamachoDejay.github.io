@@ -77,6 +77,16 @@ try {
         throw "The build completed without creating $indexPath"
     }
 
+    $invalidAssetMatch = Get-ChildItem -LiteralPath (Join-Path $buildPath 'html') -Recurse -File -Filter '*.html' |
+        ForEach-Object {
+            Select-String -LiteralPath $_.FullName -Pattern '(?:src|href)="//build/' |
+                Select-Object -First 1
+        } |
+        Select-Object -First 1
+    if ($null -ne $invalidAssetMatch) {
+        throw "Generated HTML contains a broken //build/ asset URL"
+    }
+
     Write-Host 'Validation passed: the strict build completed successfully.'
 }
 finally {

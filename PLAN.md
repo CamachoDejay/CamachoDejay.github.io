@@ -100,10 +100,11 @@ permissions to the validation workflow.
 - Remove the legacy configuration backups only after the production site has
   been stable and the rollback procedure is documented.
 
-**Progress:** the manually triggered workflow is prepared on the
-`pages-deployment` branch. It must pass pull-request validation, be merged,
-and then be enabled and exercised deliberately through the GitHub Pages
-settings and Actions interface.
+**Progress:** the manual workflow was merged and its first run completed, but
+visual review caught malformed `//build/` asset URLs caused by setting the
+root `BASE_URL` to `/`. The `fix-pages-base-url` branch removes that
+override and adds a regression check. A corrected deployment and visual
+verification remain required.
 
 **Milestone exit criterion:** the Jupyter Book 2 site is live, important routes
 are verified, deployment is reproducible, and a failed build cannot replace the
