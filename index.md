@@ -18,7 +18,6 @@ Through this five-year, SEK 15 million grant, we are developing and offering [sm
 ```{admonition} Links
 
 ::::{grid}
-:gutter: 4
 
 :::{grid-item-card} GitHub
 [CamachoDejay](https://github.com/CamachoDejay)
