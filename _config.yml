@@ -5,6 +5,14 @@ title: Rafa's website
 author: Rafael Camacho
 logo: logo.png
 
+# Build only the pages intentionally listed in the table of contents. Hidden
+# project tooling still needs to be excluded explicitly by Jupyter Book 1.
+only_build_toc_files: true
+exclude_patterns:
+  - .venv/**
+  - PLAN.md
+  - next-steps.md
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
@@ -30,4 +38,5 @@ repository:
 html:
   #use_issues_button: true
   use_repository_button: true
-  google_analytics_id: G-TLZPDX5E78
+  analytics:
+    google_analytics_id: G-TLZPDX5E78

@@ -256,3 +256,37 @@ working site.
 - [Semantic Scholar Academic Graph API](https://api.semanticscholar.org/api-docs/)
 - [ORCID API read-data tutorial](https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/)
 - [OpenAI speech-to-text guide](https://developers.openai.com/api/docs/guides/speech-to-text)
+
+## Local Jupyter Book 1 preview
+
+These commands reproduce the legacy site without modifying the tracked
+`_build` directory. Run them from PowerShell in the repository root:
+
+```powershell
+$previewPath = Join-Path $env:TEMP camachodejay-preview
+
+uv run jupyter-book build . --path-output $previewPath --all
+
+uv run python -m http.server 8000 `
+  --bind 127.0.0.1 `
+  --directory $previewPath\_build\html
+```
+
+Open <http://127.0.0.1:8000/> in a browser. The server occupies the current
+PowerShell window; press `Ctrl+C` to stop it.
+
+Remove the generated preview when it is no longer needed:
+
+```powershell
+Remove-Item -LiteralPath $previewPath -Recurse -Force
+```
+
+If `uv` is not available in the current PowerShell session, add its installation
+directory temporarily:
+
+```powershell
+$env:Path = (Join-Path $env:USERPROFILE .local\bin) + [IO.Path]::PathSeparator + $env:Path
+```
+
+Update this section when the Jupyter Book 2 migration changes the build or
+preview commands.
