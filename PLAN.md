@@ -72,6 +72,12 @@ Setup, validation, and preview commands are documented in `README.md`.
 - Delete the local and remote `website-modernization` branches only after the
   merged baseline has been rechecked.
 
+**Progress:** `master` is protected by required pull requests, resolved
+conversations, and the strict build check. The merged modernization branches
+and obsolete legacy branches have been removed; the old `v01` history is
+preserved by the `archive-v01-2017` tag. An additional link checker remains
+optional.
+
 ### 3. Introduce production deployment separately
 
 Create deployment as a separate reviewed change; do not add deployment
@@ -89,10 +95,15 @@ permissions to the validation workflow.
   analytics, mobile layout, and important external links.
 - Document how to restore the existing `gh-pages` version before retiring that
   publishing path.
-- After the first release is accepted, enable deployment following successful
-  changes to `master`.
+- Keep publishing manual after the first release unless automatic deployment
+  is explicitly preferred later.
 - Remove the legacy configuration backups only after the production site has
   been stable and the rollback procedure is documented.
+
+**Progress:** the manually triggered workflow is prepared on the
+`pages-deployment` branch. It must pass pull-request validation, be merged,
+and then be enabled and exercised deliberately through the GitHub Pages
+settings and Actions interface.
 
 **Milestone exit criterion:** the Jupyter Book 2 site is live, important routes
 are verified, deployment is reproducible, and a failed build cannot replace the
