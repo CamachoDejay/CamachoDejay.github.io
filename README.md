@@ -27,8 +27,19 @@ The published content is maintained in:
 - `courses.md`
 - `publications.md`
 
-Navigation is defined in `_toc.yml`, and Jupyter Book configuration is in
-`_config.yml`.
+Navigation and Jupyter Book configuration are defined in `myst.yml`.
+
+## Validate locally
+
+Run the non-interactive validation check before committing:
+
+```powershell
+.\scripts\check.ps1
+```
+
+The script synchronizes the locked environment, removes any previous `_build`
+output, and performs a clean Jupyter Book 2 build with strict validation. It
+deletes the generated site when the check finishes, including after a failure.
 
 ## Build and preview locally
 
@@ -53,6 +64,9 @@ If the PowerShell execution policy blocks the direct command, use:
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\preview.ps1
 ```
+
+The same fallback can be used for validation by replacing `preview.ps1` with
+`check.ps1`.
 
 Use `-Port` to select another port, for example:
 
