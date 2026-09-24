@@ -23,6 +23,3 @@ _build/
 Thumbs.db
 .vscode/
 .idea/
-
-# MyST build outputs
-_build

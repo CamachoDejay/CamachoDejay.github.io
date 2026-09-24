@@ -1,19 +1,14 @@
 version: 1
 project:
-  title: Rafa's website
+  title: Rafael Camacho personal site
   authors:
     - name: Rafael Camacho
   exclude:
     - .venv/**
     - PLAN.md
-    - next-steps.md
   github: CamachoDejay/CamachoDejay.github.io
   bibliography:
     - references.bib
-  exports:
-    - format: pdf
-      template: plain_latex_book
-      output: exports/book.pdf
   toc:
     - file: index.md
     - file: cv.md
