@@ -1,0 +1,73 @@
+# This workflow is continuous integration (CI), not deployment.
+# It proves that a pull request can build the complete website in a fresh Linux
+# environment. Nothing here publishes or changes the live GitHub Pages site.
+name: Validate website
+
+# Run whenever a pull request proposes changes to the default source branch.
+# Additional commits pushed to the same pull request automatically run it again.
+on:
+  pull_request:
+    branches:
+      - master
+
+# The temporary GITHUB_TOKEN may only read repository contents. A validation
+# workflow does not need permission to write commits, modify PRs, or deploy.
+permissions:
+  contents: read
+
+jobs:
+  build:
+    # This text becomes the status-check name shown on the pull request.
+    name: Strict Jupyter Book build
+
+    # GitHub creates a new temporary Linux machine for every run. Building away
+    # from the developer's Windows machine catches missing or machine-specific
+    # dependencies.
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      # Jupyter Book 2 uses a managed Node.js runtime to render its web theme.
+      # CI is non-interactive, so we explicitly permit that managed installation.
+      JB_ALLOW_NODEENV: "1"
+
+    steps:
+      # Download the exact revision being tested into the temporary runner.
+      # Actions are pinned to immutable commit hashes; the comments retain the
+      # readable release versions for future maintenance.
+      - name: Check out the proposed changes
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Install the same uv release currently used for local development. The uv
+      # cache accelerates downloads, while uv.lock still controls package versions.
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.18"
+          enable-cache: true
+
+      # Read .python-version and install that Python release if the runner does
+      # not already provide it.
+      - name: Install the pinned Python version
+        run: uv python install
+
+      # --locked makes the job fail rather than silently changing uv.lock. This
+      # ensures CI uses the dependency resolution reviewed in the pull request.
+      - name: Synchronize the locked environment
+        run: uv sync --locked
+
+      # --strict turns warnings and invalid site content into a failed check.
+      # This is the Linux equivalent of running scripts/check.ps1 locally.
+      - name: Build the website with strict validation
+        run: uv run --locked jupyter book build --html --strict
+
+      # Preserve the generated HTML for seven days so it can be downloaded from
+      # the workflow summary and inspected. This is an ordinary build artifact:
+      # uploading it does NOT deploy it to GitHub Pages.
+      - name: Upload the generated website for inspection
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: website-html
+          path: _build/html
+          if-no-files-found: error
+          retention-days: 7

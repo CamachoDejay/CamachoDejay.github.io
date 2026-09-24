@@ -1,23 +1,22 @@
 # Teaching
 
-I participate in many courses covering the topics of microscopy and bioImage analysis. Below some examples.
+I contribute to courses and workshops covering microscopy and bioimage analysis. Below are some examples.
 
 ## Graduate courses at the Centre for Cellular Imaging
 
-Cellular Imaging - PhD Course: This course deals with different aspects of modern cellular and molecular microscopy. Teaching will be performed through lectures and group discussions.
-[More information here](https://www.gu.se/en/core-facilities/graduate-course-cellular-imaging-3-hp)
+Cellular Imaging – PhD Course: This course covers different aspects of modern cellular and molecular microscopy through lectures and group discussions.
+[Course information](https://www.gu.se/en/core-facilities/courses-for-phd-students-by-core-facilities)
 
-Introduction in Image analysis for Life science: This course provides a hands-on introduction to image processing and analysis, with emphasis on biologically relevant examples.
-[More information here](https://www.gu.se/en/core-facilities/graduate-course-introduction-in-image-analysis-for-life-science)
+Introductory Course in Image Analysis in Life Science: This course provides a hands-on introduction to image processing and analysis, with an emphasis on biologically relevant examples.
+[Course information](https://www.gu.se/en/core-facilities/courses-for-phd-students-by-core-facilities)
 
 ## Workshops and external courses
 
-Trainer in BioImage Analysis courses and workshops – Latest:
-Smart Microscopy Workshop 2021 and NorMIC workshops
+I have contributed as a trainer to bioimage analysis courses and workshops, including the Smart Microscopy Workshop (2021) and NorMIC workshops.
 
-For more info please go to:
+For more information, see:
 
-[Intro to bioimage analysis in FIJI](https://github.com/CamachoDejay/Teaching-ImageJ-FIJI)
+[Introduction to bioimage analysis in Fiji](https://github.com/CamachoDejay/Teaching-ImageJ-FIJI)
 
-[Quick into to bioimage analysis in Python](https://github.com/CamachoDejay/teaching-bioimage-analysis-python)
+[Quick intro to bioimage analysis in Python](https://github.com/CamachoDejay/teaching-bioimage-analysis-python)
 

@@ -1,0 +1,22 @@
+version: 1
+project:
+  title: Rafael Camacho personal site
+  authors:
+    - name: Rafael Camacho
+  exclude:
+    - .venv/**
+    - PLAN.md
+  github: CamachoDejay/CamachoDejay.github.io
+  bibliography:
+    - references.bib
+  toc:
+    - file: index.md
+    - file: cv.md
+    - file: courses.md
+    - file: publications.md
+site:
+  options:
+    logo: logo.png
+    analytics_google: G-TLZPDX5E78
+    folders: true
+  template: book-theme

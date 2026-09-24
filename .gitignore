@@ -1,0 +1,25 @@
+# Project environment
+.venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter caches
+.ipynb_checkpoints/
+.jupyter_cache/
+
+# Generated website output
+_build/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
