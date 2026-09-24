@@ -39,7 +39,8 @@ Run the non-interactive validation check before committing:
 
 The script synchronizes the locked environment, removes any previous `_build`
 output, and performs a clean Jupyter Book 2 build with strict validation. It
-deletes the generated site when the check finishes, including after a failure.
+also rejects invalid root asset URLs and deletes the generated site when the
+check finishes, including after a failure.
 
 ## Build and preview locally
 
