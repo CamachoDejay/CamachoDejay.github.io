@@ -86,7 +86,15 @@ repository permission and does not deploy or modify the live website.
 
 ## Publishing
 
-The live GitHub Pages site is currently maintained separately on the
-`gh-pages` branch. During the migration, review changes through the local
-preview and do not replace the production build until the new site has been
-approved.
+The live site is still served from the legacy `gh-pages` branch until the
+first Jupyter Book 2 deployment is approved. The intended replacement is the
+manual `Deploy website` workflow in `.github/workflows/deploy.yml`.
+
+After the workflow has been merged and GitHub Pages has been configured to use
+GitHub Actions, publish an approved `master` revision from the repository's
+**Actions** tab: select **Deploy website**, choose **Run workflow**, confirm
+`master`, and start the run. The workflow performs a new locked strict build
+and deploys only the generated HTML. It does not modify `gh-pages`.
+
+Merging a pull request does not trigger this workflow. Everything merged into
+`master` should nevertheless be safe to include in the next manual release.

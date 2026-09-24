@@ -1,0 +1,116 @@
+# This workflow publishes the reviewed source on master to GitHub Pages.
+# It is deliberately manual: merging a pull request does not publish anything.
+# Run it from GitHub's Actions tab only when the current master is ready to go
+# live.
+name: Deploy website
+
+# workflow_dispatch creates the "Run workflow" button in the GitHub interface
+# and also permits the equivalent "gh workflow run" command.
+on:
+  workflow_dispatch:
+
+# Start with no token permissions. Each job receives only what it needs below.
+permissions: {}
+
+# Never let two deployments modify the Pages site simultaneously. An in-flight
+# release is allowed to finish rather than being cancelled by a later click.
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build Pages artifact
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    # Building needs source access and read access to the existing Pages
+    # configuration. It cannot change repository content or deploy a site.
+    permissions:
+      contents: read
+      pages: read
+
+    env:
+      # Jupyter Book 2 uses a managed Node.js runtime for its web theme.
+      # The runner is non-interactive, so managed installation is permitted
+      # explicitly.
+      JB_ALLOW_NODEENV: "1"
+
+    steps:
+      # The Actions interface can offer other refs in its branch selector.
+      # Refuse them explicitly: only reviewed source on master may be deployed.
+      - name: Confirm the trusted deployment branch
+        shell: bash
+        run: |
+          if [[ "$GITHUB_REF" != "refs/heads/master" ]]; then
+            echo "Refusing to deploy $GITHUB_REF; select master."
+            exit 1
+          fi
+
+      # Download the exact master commit selected for this workflow run.
+      # Actions are pinned to immutable commit hashes; comments retain their
+      # readable release versions for future updates.
+      - name: Check out the website source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Read the site's Pages URL and base path. For this user site the base path
+      # is normally empty/root, but deriving it avoids hard-coding that detail.
+      - name: Read the GitHub Pages configuration
+        id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      # Install the same uv release used by local validation. The cache speeds
+      # dependency downloads; uv.lock still fixes the Python package versions.
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.18"
+          enable-cache: true
+
+      # uv reads .python-version, currently Python 3.12.
+      - name: Install the pinned Python version
+        run: uv python install
+
+      # --locked fails if pyproject.toml and uv.lock disagree rather than
+      # silently resolving a different environment during deployment.
+      - name: Synchronize the locked environment
+        run: uv sync --locked
+
+      # Build exactly as validation does. BASE_URL makes generated links correct
+      # if the Pages location ever changes from the root URL.
+      - name: Build the production website
+        env:
+          BASE_URL: ${{ steps.pages.outputs.base_path || '/' }}
+        run: uv run --locked jupyter book build --html --strict
+
+      # This special Pages artifact is temporary deployment input. It is not
+      # committed to gh-pages and contains only the generated static website.
+      - name: Package the generated website for Pages
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _build/html
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # Only this job can create a Pages deployment. The identity token proves to
+    # GitHub that the request came from this specific trusted workflow job.
+    permissions:
+      pages: write
+      id-token: write
+
+    # GitHub records the deployment and its URL in the protected Pages
+    # environment. Environment rules can later add another approval gate.
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # Deploy the github-pages artifact produced by the successful build job.
+      # The action reports the resulting public URL as page_url above.
+      - name: Publish the Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
