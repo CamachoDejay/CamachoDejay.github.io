@@ -1,10 +1,10 @@
 # Rafael Camacho's personal website
 
 This repository contains the source for
-[camachodejay.github.io](https://camachodejay.github.io/). The source on the
-`website-modernization` branch uses Jupyter Book 2; the production site remains
-on the previous Jupyter Book 1 build until the migration is approved. The
-staged migration plan is in [`PLAN.md`](PLAN.md).
+[camachodejay.github.io](https://camachodejay.github.io/). The source on
+`master` uses Jupyter Book 2; the production site remains on the previous
+Jupyter Book 1 build until the new deployment is approved. The remaining
+roadmap is in [`PLAN.md`](PLAN.md).
 
 ## Requirements
 
