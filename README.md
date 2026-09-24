@@ -74,6 +74,16 @@ Use `-Port` to select another port, for example:
 .\scripts\preview.ps1 -Port 8080
 ```
 
+## Automated pull-request validation
+
+The workflow in `.github/workflows/validate.yml` runs when a pull request
+targets `master`. A fresh Linux runner installs the pinned Python and uv
+environment, performs the same locked strict build, and uploads the generated
+HTML as a seven-day workflow artifact.
+
+The check and artifact are for validation only. This workflow has read-only
+repository permission and does not deploy or modify the live website.
+
 ## Publishing
 
 The live GitHub Pages site is currently maintained separately on the

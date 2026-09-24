@@ -134,8 +134,9 @@ failure before adding the next:
 3. Add internal-link and basic content checks once the build job is stable.
 4. Optionally add a preview mechanism if reviewing an artifact is too awkward.
 
-**Progress:** Step 1 is implemented as `scripts/check.ps1`. It synchronizes the
-locked environment, runs a clean strict build, and removes the generated output.
+**Progress:** Step 1 is implemented as `scripts/check.ps1`. Step 2 is prepared
+as `.github/workflows/validate.yml`; its first GitHub run must be verified when
+the modernization branch is pushed and opened as a pull request.
 
 Do not enable production deployment in this phase.
 

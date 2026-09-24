@@ -65,14 +65,9 @@ try {
         throw "uv sync failed with exit code $LASTEXITCODE"
     }
 
-    $jupyterBookExe = Join-Path $repoRoot '.venv\Scripts\jupyter-book.exe'
-    if (-not (Test-Path -LiteralPath $jupyterBookExe -PathType Leaf)) {
-        throw "Jupyter Book was not found at $jupyterBookExe"
-    }
-
     Remove-Build
     Write-Host 'Running a clean, strict Jupyter Book 2 build...'
-    & $jupyterBookExe build --html --strict
+    & $uvExe run --locked jupyter book build --html --strict
     if ($LASTEXITCODE -ne 0) {
         throw "Jupyter Book failed with exit code $LASTEXITCODE"
     }
