@@ -1,10 +1,10 @@
 # Rafael Camacho's personal website
 
 This repository contains the source for
-[camachodejay.github.io](https://camachodejay.github.io/). The site currently
-uses Jupyter Book 1 while its migration to Jupyter Book 2 is developed and
-tested on the `website-modernization` branch. The staged migration plan is in
-[`PLAN.md`](PLAN.md).
+[camachodejay.github.io](https://camachodejay.github.io/). The source on the
+`website-modernization` branch uses Jupyter Book 2; the production site remains
+on the previous Jupyter Book 1 build until the migration is approved. The
+staged migration plan is in [`PLAN.md`](PLAN.md).
 
 ## Requirements
 
@@ -38,9 +38,15 @@ Run:
 .\scripts\preview.ps1
 ```
 
-The script builds the site in the Windows temporary directory, serves it at
-<http://127.0.0.1:8000/>, and opens the default browser. Press `Ctrl+C` in
-PowerShell to stop the server and delete the temporary build.
+The script synchronizes the locked environment, copies the current working tree
+to the Windows temporary directory, performs a strict Jupyter Book 2 build,
+serves it at <http://127.0.0.1:8000/>, and opens the default browser. Press
+`Ctrl+C` in PowerShell to stop the server and delete the temporary copy.
+
+On its first run, Jupyter Book may download its managed Node.js runtime and web
+theme dependencies. The managed Node.js runtime is cached outside the
+repository. Because the temporary site build is deleted after every preview,
+rebuilding its disposable web theme can take a few minutes.
 
 If the PowerShell execution policy blocks the direct command, use:
 

@@ -257,18 +257,21 @@ working site.
 - [ORCID API read-data tutorial](https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/)
 - [OpenAI speech-to-text guide](https://developers.openai.com/api/docs/guides/speech-to-text)
 
-## Local Jupyter Book 1 preview
+## Local Jupyter Book 2 preview
 
-The preview script reproduces the legacy site without modifying the tracked
-`_build` directory. Run it from PowerShell in the repository root:
+The preview script builds the migrated site from an isolated copy of the
+current working tree, without creating `_build` output in the repository. Run
+it from PowerShell in the repository root:
 
 ```powershell
 .\scripts\preview.ps1
 ```
 
-The script builds into the Windows temporary directory, starts a local server,
-and opens <http://127.0.0.1:8000/> in the default browser. Press `Ctrl+C` in
-PowerShell to stop the server; the script then deletes the temporary build.
+The script synchronizes the locked environment, performs a strict Jupyter Book
+2 build in the Windows temporary directory, starts a local server, and opens
+<http://127.0.0.1:8000/> in the default browser. Press `Ctrl+C` in PowerShell
+to stop the server; the script then deletes the temporary copy.
+Recreating the disposable Jupyter Book web theme can take a few minutes.
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\preview.ps1
@@ -281,6 +284,3 @@ per-user installation directory. To use another local port:
 ```powershell
 .\scripts\preview.ps1 -Port 8080
 ```
-
-Update this section when the Jupyter Book 2 migration changes the build or
-preview commands.

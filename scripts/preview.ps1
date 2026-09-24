@@ -9,11 +9,12 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = [IO.Path]::GetFullPath((Split-Path -Parent $PSScriptRoot))
 $tempRoot = [IO.Path]::GetFullPath([IO.Path]::GetTempPath())
 $previewPath = [IO.Path]::GetFullPath(
     (Join-Path $tempRoot 'camachodejay-preview')
 )
+$previewSource = Join-Path $previewPath 'source'
 $expectedParent = $tempRoot.TrimEnd('\')
 
 if (
@@ -38,6 +39,19 @@ else {
 }
 
 $serverProcess = $null
+$originalLocation = Get-Location
+$previousPythonUtf8 = [Environment]::GetEnvironmentVariable(
+    'PYTHONUTF8',
+    'Process'
+)
+$previousPythonIoEncoding = [Environment]::GetEnvironmentVariable(
+    'PYTHONIOENCODING',
+    'Process'
+)
+$previousNodeenvPermission = [Environment]::GetEnvironmentVariable(
+    'JB_ALLOW_NODEENV',
+    'Process'
+)
 
 function Remove-Preview {
     if (Test-Path -LiteralPath $previewPath) {
@@ -45,25 +59,67 @@ function Remove-Preview {
     }
 }
 
-Push-Location $repoRoot
 try {
-    Remove-Preview
+    [Environment]::SetEnvironmentVariable('PYTHONUTF8', '1', 'Process')
+    [Environment]::SetEnvironmentVariable(
+        'PYTHONIOENCODING',
+        'utf-8',
+        'Process'
+    )
+    [Environment]::SetEnvironmentVariable('JB_ALLOW_NODEENV', '1', 'Process')
 
-    Write-Host 'Building the site...'
-    & $uvExe run jupyter-book build . --path-output $previewPath --all
+    Set-Location $repoRoot
+    Write-Host 'Synchronizing the locked environment...'
+    & $uvExe sync --locked
+    if ($LASTEXITCODE -ne 0) {
+        throw "uv sync failed with exit code $LASTEXITCODE"
+    }
+
+    $pythonExe = Join-Path $repoRoot '.venv\Scripts\python.exe'
+    $jupyterBookExe = Join-Path $repoRoot '.venv\Scripts\jupyter-book.exe'
+    foreach ($executable in $pythonExe, $jupyterBookExe) {
+        if (-not (Test-Path -LiteralPath $executable -PathType Leaf)) {
+            throw "Required project executable was not found at $executable"
+        }
+    }
+
+    Remove-Preview
+    New-Item -ItemType Directory -Path $previewSource | Out-Null
+
+    Write-Host "Copying the working tree to $previewSource ..."
+    $excludedNames = @(
+        '.git'
+        '.venv'
+        '_build'
+        '.vscode'
+        '.idea'
+        '.codex'
+        '.agents'
+    )
+    Get-ChildItem -LiteralPath $repoRoot -Force |
+        Where-Object {
+            $_.Name -notin $excludedNames -and
+            $_.Name -notlike '.env*'
+        } |
+        ForEach-Object {
+            Copy-Item `
+                -LiteralPath $_.FullName `
+                -Destination $previewSource `
+                -Recurse `
+                -Force
+        }
+
+    Set-Location $previewSource
+    Write-Host 'Building the Jupyter Book 2 site with strict validation...'
+    & $jupyterBookExe build --html --strict
     if ($LASTEXITCODE -ne 0) {
         throw "Jupyter Book failed with exit code $LASTEXITCODE"
     }
 
-    $htmlPath = Join-Path $previewPath '_build\html'
+    $htmlPath = Join-Path $previewSource '_build\html'
     $indexPath = Join-Path $htmlPath 'index.html'
     if (-not (Test-Path -LiteralPath $indexPath -PathType Leaf)) {
         throw "The build completed without creating $indexPath"
-    }
-
-    $pythonExe = Join-Path $repoRoot '.venv\Scripts\python.exe'
-    if (-not (Test-Path -LiteralPath $pythonExe -PathType Leaf)) {
-        throw "The project Python executable was not found at $pythonExe"
     }
 
     $url = "http://127.0.0.1:$Port/"
@@ -80,7 +136,7 @@ try {
     $serverProcess = Start-Process `
         -FilePath $pythonExe `
         -ArgumentList $serverArguments `
-        -WorkingDirectory $repoRoot `
+        -WorkingDirectory $previewSource `
         -WindowStyle Hidden `
         -PassThru
 
@@ -125,7 +181,24 @@ finally {
         }
     }
 
+    Set-Location $originalLocation
     Remove-Preview
-    Pop-Location
+
+    [Environment]::SetEnvironmentVariable(
+        'PYTHONUTF8',
+        $previousPythonUtf8,
+        'Process'
+    )
+    [Environment]::SetEnvironmentVariable(
+        'PYTHONIOENCODING',
+        $previousPythonIoEncoding,
+        'Process'
+    )
+    [Environment]::SetEnvironmentVariable(
+        'JB_ALLOW_NODEENV',
+        $previousNodeenvPermission,
+        'Process'
+    )
+
     Write-Host "Removed temporary preview: $previewPath"
 }
