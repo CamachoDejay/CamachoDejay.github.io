@@ -4,7 +4,7 @@ version = "0.0.0"
 description = "Build environment for Rafael Camacho's personal website"
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "jupyter-book==1.0.4.post1",
+    "jupyter-book==2.1.7",
 ]
 
 [tool.uv]
