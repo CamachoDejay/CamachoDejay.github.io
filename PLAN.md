@@ -259,33 +259,27 @@ working site.
 
 ## Local Jupyter Book 1 preview
 
-These commands reproduce the legacy site without modifying the tracked
-`_build` directory. Run them from PowerShell in the repository root:
+The preview script reproduces the legacy site without modifying the tracked
+`_build` directory. Run it from PowerShell in the repository root:
 
 ```powershell
-$previewPath = Join-Path $env:TEMP camachodejay-preview
-
-uv run jupyter-book build . --path-output $previewPath --all
-
-uv run python -m http.server 8000 `
-  --bind 127.0.0.1 `
-  --directory $previewPath\_build\html
+.\scripts\preview.ps1
 ```
 
-Open <http://127.0.0.1:8000/> in a browser. The server occupies the current
-PowerShell window; press `Ctrl+C` to stop it.
-
-Remove the generated preview when it is no longer needed:
+The script builds into the Windows temporary directory, starts a local server,
+and opens <http://127.0.0.1:8000/> in the default browser. Press `Ctrl+C` in
+PowerShell to stop the server; the script then deletes the temporary build.
 
 ```powershell
-Remove-Item -LiteralPath $previewPath -Recurse -Force
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\preview.ps1
 ```
 
-If `uv` is not available in the current PowerShell session, add its installation
-directory temporarily:
+Use the second form only if the PowerShell execution policy prevents the direct
+command from running. The script locates `uv` on `PATH` or in its default
+per-user installation directory. To use another local port:
 
 ```powershell
-$env:Path = (Join-Path $env:USERPROFILE .local\bin) + [IO.Path]::PathSeparator + $env:Path
+.\scripts\preview.ps1 -Port 8080
 ```
 
 Update this section when the Jupyter Book 2 migration changes the build or
